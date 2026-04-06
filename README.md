@@ -114,7 +114,7 @@ deploy/tls/certs/
 docs/
 ```
 
-**Назначение:** исключает из build context файлы, не нужные для сборки — уменьшает размер контекста и ускоряет передачу в Docker daemon.
+Исключает из build context файлы, не нужные для сборки — уменьшает размер контекста и ускоряет передачу в Docker daemon.
 
 ---
 
@@ -223,7 +223,7 @@ curl http://localhost:8082/health
 Ожидаемый ответ:
 
 ```json
-{"status":"ok","service":"tasks"}
+{"service":"tasks","status":"ok"}
 ```
 
 ### Остановка
